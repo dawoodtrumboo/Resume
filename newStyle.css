@@ -1,0 +1,314 @@
+/*---
+Colors:
+Primary Background :#313536
+Secondary Background :#252829
+Text Secondary: ABAEB0
+Buttons: 00E472 
+
+
+----*/
+@font-face {
+    font-family: 'Poppins';
+    src:url(resources/font/Poppins-Regular.ttf) format('truetype');
+    /* Repeat the src property for each font file you have (e.g., different weights/styles) */
+    font-weight: normal;
+    font-style: normal;
+  }
+  .text-sec{
+    color:#ABAEB0 ;
+  }
+  
+
+*{
+    margin: 0px; 
+    color: white; 
+    letter-spacing: .2rem; 
+ 
+}
+h4{
+    font-weight: 100 ;
+    color: #00E472;
+}
+.text-align{
+    
+    text-align: center;    
+}
+body{
+    margin:0px;
+    /* overflow: hidden; */
+    font-family: 'POPPINS',san-serif;
+    overflow-x: hidden;
+}
+button{
+    background-color: #00E472;
+    border-radius: 5em; 
+
+    margin:1em; 
+    width: 15%;
+}
+
+
+.nav-bar{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin:0;
+    background-color: #313536;
+}
+
+.hor-list{
+    margin:0;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    
+}
+.hor-list li{
+    margin:20px;
+    /* text-decoration: none; */
+}
+.hor-list a{
+    color: white;
+    
+}
+
+.hor-list a:hover{
+    border-bottom: solid;
+    /* border-bottom-left-radius: 5%; */
+    padding-bottom:1px;
+    color: #00E472;
+    /* text-decoration: underline; */
+
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#hire{
+    padding: 0em 1em;
+    /* margin: 0px; */
+    height: 30px;
+    width: auto;
+}
+#header-img{
+    display: flex;
+    
+    margin: 0px;
+    background-color: #252829;
+    height:50vh;
+    width: auto;
+    object-fit: cover;
+}
+#header-image{
+    /* background-image: url(resources/76070-typography-internet-simple_background-technology.jpg); */
+    object-fit:scale-down;
+    /* flex-shrink: 1; */
+}
+#headerimg{
+    overflow: auto;
+    max-width: 100%;
+    z-index: 1;
+    position:absolute;
+    left:65em;
+    top:0px;
+    height: 37em;
+    width:37em;
+    border-radius: 50%;
+   
+}
+.header-lContainer{
+    /* padding: 3rem; */
+    justify-content: start;
+    width: 60%;
+    height: auto;
+    /* border: 1px solid white; */
+    margin: 3.5em;
+    
+}
+.header-lContainer>*{
+    padding: .5rem;
+}
+
+.header-lContainer h3{
+    color:#808080;
+}
+.hireme{
+    /* columns: black; */
+    background-color:transparent;
+    border: 2px solid #00E472;
+}
+section{
+    background-color: #313536;
+    height:75vh;
+}
+section:nth-child(2n+1){
+    background-color: #252829;
+}
+
+#About-me{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+
+}
+.profile{
+    margin: 5em;
+    /* background-color: black; */
+    height: 80%;
+    width: 30%;
+}
+.profile-des{
+    width: 40%;
+    margin: 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+}
+.profile-des>*{
+    padding-bottom: 2em;
+}
+#Skills{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    /* flex-direction: row-reverse; */
+}
+.circle{
+    margin:1em;
+    background-color:transparent;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border:12px solid #00E472;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.profile{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly   ;
+}
+
+#Experience{
+    padding-top: 1px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    height: auto;
+    /* max-height: 80vh;/ */
+}
+  
+.lExpContainer{
+    display: flex;
+    flex-direction: column;
+    width:50%;
+    /* border:2px solid white; */
+    margin:6em;
+}  
+.rExpContainer{
+    margin: 8em 5em;
+   
+    background-color: black;
+    width: 20%;
+    max-height: 450px;
+}
+.lExpContainer>*{
+    margin-bottom: 1em;
+}
+.inner-cont{
+    margin-bottom: 2em;
+}
+
+.inner-cont>*{
+    margin-bottom: .5em;
+}
+
+#Education{
+    display:flex;
+    justify-content: space-between;
+    /* flex-direction: row-reverse; */
+    height: auto;
+}
+#Projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+#Projects>*{
+    margin:1em;
+}
+#Projects>h4{
+    margin-top: 5em;;
+}
+.outer-grid{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    justify-content: space-between;
+    margin: 5em;
+    border: 1px solid wheat;
+    
+}
+.inner-grid{
+    width: 20%;
+    height: auto;
+    margin:2em;
+    border:3px solid #00E472 ;
+    border-radius: .5em; 
+    overflow: auto;
+}
+.inner-grid>*{
+    margin:1rem;
+}
+#Contact{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    height: auto;
+
+}
+#Contact>*{
+    margin-bottom: 1em;;
+}
+#Contact h4{
+    margin-top: 4em;
+    
+}
+.form{
+    color: #313536;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    justify-content: center;    
+    /* border:1px solid white;   */
+    width:70%;
+}
+.form input,textarea{
+    background-color: transparent;
+    margin-bottom: 1em;
+    padding: .5em;
+    height: 2em;
+    width:50em;
+    border: 3px solid #00E472;
+    border-radius: .6em;
+}
+.form button{
+    padding: 1em;
+}
+.form textarea{
+    height: 11em;
+}
+table>*{
+    margin-bottom: 5em;
+}
